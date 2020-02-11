@@ -2,3 +2,5 @@ url: "https://codingkicks.github.io" # the base hostname & protocol for your sit
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Coding Kicks" # the name of your site, e.g. ACME Corp.
 permalink: pretty
+plugins:
+- jekyll-menus
