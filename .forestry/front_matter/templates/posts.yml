@@ -1,4 +1,43 @@
 ---
 label: Posts
 hide_body: false
-fields: []
+fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Template Layout
+  hidden: true
+  default: post
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  default: Untitled
+- name: author
+  type: text
+  config:
+    required: false
+  label: Author
+- name: post_thumbnail
+  type: file
+  config:
+    maxSize: '1'
+  label: Post Thumbnail
+- name: categories
+  type: tag_list
+  default: []
+  label: Categories
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+- name: related_posts
+  type: blocks
+  label: Related Posts
+  template_types:
+  - posts
+  config:
+    min: 
+    max: 
