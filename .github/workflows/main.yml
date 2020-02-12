@@ -8,13 +8,12 @@ on:
 jobs:
   build:
 
-    runs-on: ruby:2.6
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
     - name: Start Jekyll Build
       run: |
-        bundle install
-        bundle list
-        bundle exec jekyll clean
-        bundle exec jekyll build
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
