@@ -5,7 +5,8 @@ fields:
 - name: content_block
   type: blocks
   label: Content Block
-  template_types: []
+  template_types:
+  - posts
   config:
     min: 
     max: 
