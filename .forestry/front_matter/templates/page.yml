@@ -1,4 +1,11 @@
 ---
 label: Page
 hide_body: true
-fields: []
+fields:
+- name: content_block
+  type: blocks
+  label: Content Block
+  template_types: []
+  config:
+    min: 
+    max: 
