@@ -7,6 +7,7 @@ fields:
   label: Content Block
   template_types:
   - posts
+  - page
   config:
     min: 
     max: 
